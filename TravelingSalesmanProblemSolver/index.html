@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TSP Solver</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Traveling Salesman Problem Solver</h1>
+    <canvas id="tspCanvas" width="800" height="600"></canvas>
+    <div id="controls">
+        <label for="startPoint">Start Point:</label>
+        <select id="startPoint" onchange="updatePoints()"></select>
+        <label for="endPoint">End Point:</label>
+        <select id="endPoint" onchange="updatePoints()"></select>
+        <button onclick="solveTSP()">Solve TSP</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
